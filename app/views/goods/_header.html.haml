@@ -1,0 +1,19 @@
+.Header
+  .__mainMenu
+    =image_tag 'logo/logo.png', class: '--logo'
+    .--keywordSeach
+      %input{type: 'text', placeholder: 'キーワードから探す', class: '__inputbox'}
+      =image_tag 'icon/icon-search 1.png', class: '__btn'
+
+  .__subMenu
+    .--otherSarches
+      .__categorySeach
+        カテゴリー
+      .__brandSeach
+        ブランド
+
+    .--loguinMenu
+      .__login
+        = link_to 'ログイン', '#'
+      .__signUp
+        = link_to '新規会員登録', '#'
