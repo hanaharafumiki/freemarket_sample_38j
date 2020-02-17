@@ -12,12 +12,12 @@
 |sale|integer|null: false|
 |user_id|references|null: false, foreign_key: true|
 |category_id|references|null: false, foreign_key: ture|
-|brand_id|references|null: false, foreign_key: ture, optional: true|
+|brand_id|references|null: false, foreign_key: ture|
 
 ### Association
 - belongs_to :user
 - belongs_to :category
-- belongs_to :brand
+- belongs_to :brand, optional: true
 - has_many :images
 - has_one :purchase
 
@@ -31,7 +31,8 @@
 |password|string|null: false|
 |family_name|string|null: false|
 |first_name|string|null: false|
-|furigana|string|null: false|
+|family_furigana|string|null: false|
+|first_furigana|string|null: false|
 |birthday|integer|null: false|
 
 ### Association
