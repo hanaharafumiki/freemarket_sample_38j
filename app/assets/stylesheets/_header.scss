@@ -46,13 +46,40 @@
     .--otherSarches{
       display: flex;
       line-height: 36px;
+      
       .__categorySeach{
         padding-right: 30px;
+        .--parents{
+          .__parent{
+            display: none;
+          }
+        }
       }
+      .__categorySeach:hover{
+        .--parents{
+          .__parent{
+            display: block;
+            .--children{
+              display: none;
+            }
+          }
+          .__parent:hover{
+            .__children{
+              .--child{
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
       .__brandSeach{
         padding: 0 0 0 16px;
       }
-    }
+
     .--loguinMenu{
       display: flex;
       line-height: 36px;
@@ -62,8 +89,8 @@
         padding: 0 0 0 16px;
       }
     }
-  }
-}
+  
+
 
 a{
   text-decoration: none;
