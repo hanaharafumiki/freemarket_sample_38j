@@ -36,6 +36,7 @@
       }
     }
   }
+
   .__subMenu{
     display: flex;
     justify-content: space-between;
@@ -48,51 +49,71 @@
       line-height: 36px;
       
       .__categorySeach{
+        color: #333;
         padding-right: 30px;
         .--parents{
           .__parent{
+            font-size: 14px;
             display: none;
           }
-        }
-      }
-      .__categorySeach:hover{
-        .--parents{
-          .__parent{
-            display: block;
-            .--children{
+
+          .--children{
+            .__child{
+              font-size: 14px;
               display: none;
             }
-          }
-          .__parent:hover{
-            .__children{
-              .--child{
-                display: block;
+
+            .--grand-children{
+              .__grand-child{
+                font-size: 14px;
+                display: none;
               }
             }
           }
         }
       }
-    }
-  }
-}
+      .__categorySeach:hover{
+        color: orange;
+        .--parents{
+          .__parent{
+            display: block;
+            color: #333;
+          }
+          .__parent:hover{
+            color: orange;
+          }
+        }
+      }
 
       .__brandSeach{
+        color: #333;
+        text-decoration: none;
         padding: 0 0 0 16px;
       }
+      .__brandSeach:hover{
+        color: orange;
+      }
+    }
 
     .--loguinMenu{
       display: flex;
       line-height: 36px;
+
       .__login{
+        .--login{
+          text-decoration: none;
+          color: #333;
+        }
       }
+
       .__signUp{
         padding: 0 0 0 16px;
+
+        .--signUp{
+          text-decoration: none;
+          color: #333;
+        }
       }
     }
-  
-
-
-a{
-  text-decoration: none;
-  color: #333;
+  }
 }
