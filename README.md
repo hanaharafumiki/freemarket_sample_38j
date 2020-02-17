@@ -1,24 +1,121 @@
-# README
+## itemsテーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|price|integer|null: false|
+|status|integer|null: false|
+|description|string|null: false|
+|charge|string|null: false|
+|area|string|null: false|
+|day|string|null: false|
+|sale|integer|null: false|
+|user_id|references|null: false, foreign_key: true|
+|category_id|references|null: false, foreign_key: ture|
+|brand_id|references|null: false, foreign_key: ture, optional: true|
 
-Things you may want to cover:
+### Association
+- belongs_to :user
+- belongs_to :category
+- belongs_to :brand
+- has_many :images
+- has_one :purchase
 
-* Ruby version
 
-* System dependencies
+## usersテーブル
 
-* Configuration
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false, unique: true|
+|email|string|null: false, unique: true|
+|password|string|null: false|
+|family_name|string|null: false|
+|first_name|string|null: false|
+|furigana|string|null: false|
+|birthday|integer|null: false|
 
-* Database creation
+### Association
+- has_one :addresses
+- has_many :credit_cards
+- has_many :purchases
+- has_many :items
 
-* Database initialization
 
-* How to run the test suite
+## addressesテーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+|Column|Type|Optoins|
+|------|----|-------|
+|family_name|string|null: false|
+|first_name|string|null: false|
+|furigana|string|null: false|
+|number|integer|null: false|
+|prefecture|string|null: false|
+|municipality|string|null: false|
+|street|string|null: false|
+|building|string|
+|phone_number|integer|
+|user_id|references|null: false, foreign_key: true|
 
-* Deployment instructions
+### Association
+- belongs_to :user
 
-* ...
+
+## credit_cardsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|number|integer|null: false|
+|owner|string|null: false|
+|expiration|integer|null: false|
+|type|string|null: false|
+|security|integer|null: false|
+|user_id|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
+
+
+## imagesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|picture|text|null: false|
+|item_id|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :item
+
+
+## categoriesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|genre|string|null: false|
+|ancestry|
+
+### Association
+- has_many :items
+- has_ancestry
+
+
+## brandsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+
+### Association
+- has_many :items
+
+
+## purchasesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|date|datetime|null: false|
+|user_id|references|null: false, foreign_key: true|
+|item_id|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :item
