@@ -3,7 +3,7 @@
   padding: 40px;
   font-family: "Source Sans Pro", Helvetica, Arial, "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", sans-serif;
 
-  .__main{
+  &__main{
     text-align: center;
     background-color: #fff;
     width: 620px;
@@ -11,20 +11,20 @@
     margin: 0 auto;
     padding: 24px 40px 40px;
 
-    .--goodName{
+    &--goodName{
       font-weight: bold;
       font-size: 24px;
     }
 
-    .--images{
-      .__mainImage{
+    &--images{
+      &__mainImage{
         width: 560px;
         height: 346px;
         object-fit: cover;
         margin-top: 15px;
       }
 
-      .__subImage{
+      &__subImage{
         width: 140px;
         height: 87px;
         object-fit: cover;
@@ -32,41 +32,40 @@
       }
     }
 
-    .--priceingInformation{
-      .__price{
+    &--priceingInformation{
+      &__price{
         font-size: 46px;
         font-weight: bold;
         margin: 15px 10px 0 0;
       }
     }
 
-    .--goodDescription{
-      .__goodName{
+    &--goodDescription{
+      &__goodName{
         margin: 25px 0px 35px 0px;
         text-align: left;
         font-size: 18px;
       }
     }
 
-    .--options{
+    &--options{
       display: flex;
       justify-content: space-between;
       margin-top: 30px;
 
-      .__favorite{
+      &__favorite{
         margin-right: auto;
         padding: 6px 10px;
         border-radius: 40px;
         color: #3CCACE;
         border: 1px solid #ffb340;
         font-size: 16px;
+        &:hover{
+          color: rgb(185, 230, 233);
+          border: 1px solid #fddcab;
+        }
       }
-      .__favorite:hover{
-        color: rgb(185, 230, 233);
-        border: 1px solid #fddcab;
-      }
-    }
-      .__report{
+      &__report{
         padding: 6px 10px;
         display: inline-block;
         border-radius: 4px;
@@ -75,33 +74,35 @@
         text-decoration: none;
         font-size: 14px;
         line-height: 25px;
-      }
-      .__report:hover{
-        color: rgb(163, 163, 163);
-        border: 1px solid rgb(163, 163, 163);
+        &:hover{
+          color: rgb(163, 163, 163);
+          border: 1px solid rgb(163, 163, 163);
+        }
       }
     }
+  }
 
-    .__comments{
+
+    &__comments{
     background-color: #fff;
     width: 652px;
     margin: 10px auto ;
     padding: 24px;
     text-align: center;
-      .--commentform{
+      &--commentform{
         margin: 0px;
         width: 626px;
         height: 104px;
         padding: 10px;
       }
-      .--commentSupplement{
+      &--commentSupplement{
         padding: 8px;
         font-size: 14px;
         background-color: #f8f8f8;
         margin: 10px 0;
         text-align: left;
       }
-      .--commentButtan{
+      &--commentButtan{
         font: 400 11px system-ui;
         line-height: 48px;
         background: #3CCACE;
@@ -114,7 +115,7 @@
     }
   }
 
-  .__paginate{
+  &__paginate{
     width: 700px;
     text-decoration: none;
     display: flex;
@@ -122,7 +123,7 @@
     justify-content: space-between;
   }
 
-  .__more{
+  &__more{
     width: 700px;
     text-decoration: none;
     margin: 24px auto;

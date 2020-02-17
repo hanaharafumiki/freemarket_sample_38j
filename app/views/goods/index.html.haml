@@ -1,25 +1,25 @@
 .GoodDetealContents
-  .__main
-    .--goodName
+  .GoodDetealContents__main
+    .GoodDetealContents__main--goodName
       product
 
-    .--images
-      = image_tag 'goods/a004.png', class: '__mainImage'
-      = image_tag 'goods/a004.png', class: '__subImage'
-      = image_tag 'goods/a005.png', class: '__subImage'
-      = image_tag 'goods/a006.png', class: '__subImage'
+    .GoodDetealContents__main--images
+      = image_tag 'goods/a004.png', class: 'GoodDetealContents__main--images__mainImage'
+      = image_tag 'goods/a004.png', class: 'GoodDetealContents__main--images__subImage'
+      = image_tag 'goods/a005.png', class: 'GoodDetealContents__main--images__subImage'
+      = image_tag 'goods/a006.png', class: 'GoodDetealContents__main--images__subImage'
 
-    .--priceingInformation
-      .__price
+    .GoodDetealContents__main--priceingInformation
+      .GoodDetealContents__main--priceingInformation__price
         ¥20000
-      .__priceSupplement
+      .GoodDetealContents__main--priceingInformation__priceSupplement
         (税込) 送料込み
         
-    .--goodDescription
-      .__goodName
+    .GoodDetealContents__main--goodDescription
+      .GoodDetealContents__main--goodDescription__goodName
         product
 
-      %table{border: '1', class: '.__goodtable',align: 'center'}
+      %table{border: '1', class: '.GoodDetealContents__main--goodDescription__goodName__goodtable',align: 'center'}
         %tr
           %th 出品者
           %td hoge
@@ -53,35 +53,35 @@
           %th 発送日の目安
           %td 1-2日で発送
 
-    .--options
-      .__favorite
+    .GoodDetealContents__main--options
+      .GoodDetealContents__main--options__favorite
         %i.fas.fa-star
         お気に入り 0
 
-      .__report
+      .GoodDetealContents__main--options__report
         %i.fa.fa-flag
         不適切な商品の通報
 
-  .__comments
-    %textarea{class: '--commentform'}
+  .GoodDetealContents__comments
+    %textarea{class: 'GoodDetealContents__comments--commentform'}
 
-    .--commentSupplement
+    .GoodDetealContents__comments--commentSupplement
       %p 相手のことを考え丁寧なコメントを心がけましょう。
       %p 不快な言葉遣いなどは利用制限や退会処分となることがあります。
 
-    .--commentButtan
+    .GoodDetealContents__comments--commentButtan
       %i.fas.fa-comment
       コメントする
 
-  .__paginate
-    .--prev
+  .GoodDetealContents__paginate
+    .GoodDetealContents--prev
       = link_to '#' do
         %i.fa.fa-angle-left
         前の商品
-    .--next
+    .GoodDetealContents--next
       = link_to '#' do
         後ろの商品
         %i.fa.fa-angle-right
 
-  .__more
+  .GoodDetealContents__more
     = link_to 'メンズをもっと見る', '#'
