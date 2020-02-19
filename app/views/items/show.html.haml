@@ -3,7 +3,7 @@
 .GoodDetealContents
   .GoodDetealContents__main
     .GoodDetealContents__main--goodName
-      product
+      = @item.name
 
     .GoodDetealContents__main--images
       = image_tag 'items/a004.png', class: 'GoodDetealContents__main--images__mainImage'
@@ -13,14 +13,13 @@
 
     .GoodDetealContents__main--priceingInformation
       .GoodDetealContents__main--priceingInformation__price
-        ¥20000
+        ¥#{@item.price}
       .GoodDetealContents__main--priceingInformation__priceSupplement
         (税込) 送料込み
         
     .GoodDetealContents__main--goodDescription
       .GoodDetealContents__main--goodDescription__goodName
-        product
-
+        = @item.name
       %table{border: '1', class: '.GoodDetealContents__main--goodDescription__goodName__goodtable',align: 'center'}
         %tr
           %th 出品者
