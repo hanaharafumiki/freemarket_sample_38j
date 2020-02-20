@@ -18,6 +18,12 @@
         最大10枚までアップロードできます
       .items__Contents__image__up
         .items__Contents__image__up__text
+          = form_for @item do |f|
+            = f.number_field :price
+
+            = f.fields_for :images do |i|
+              = i.file_field :picture
+
           .items__Contents__image__up__text--one
             = icon('fa', 'camera')  
           .items__Contents__image__up__text--two
@@ -31,7 +37,7 @@
           商品名
         .items__Contents__form__name--must
           必須
-      %input.items__Contents__form--input{ name: :email, placeholder: :"商品名(必須40文字まで)", type: :email, value: :"" }/
+      %input.items__Contents__form--input{ name: :email, placeholder: :"商品名(必須40文字まで)", type: :email, value: :"" }
 
       .items__Contents__form__description 
         .items__Contents__form__description--text
@@ -189,6 +195,4 @@
       
       .Contents__Exhibition__btn
         = link_to "出品する", "#", class: "Contents__Exhibition__btn--btn"
-
-      
         = link_to "もどる", "#", class: "Contents__Exhibition__btn--return"    
