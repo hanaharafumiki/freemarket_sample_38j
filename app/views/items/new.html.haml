@@ -21,6 +21,7 @@
           = form_for @item do |f|
             = f.fields_for :images do |i|
               = i.file_field :picture
+            = f.submit
 
           .items__Contents__image__up__text--one
             = icon('fa', 'camera')  
