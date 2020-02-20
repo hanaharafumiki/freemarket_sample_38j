@@ -19,8 +19,6 @@
       .items__Contents__image__up
         .items__Contents__image__up__text
           = form_for @item do |f|
-            = f.number_field :price
-
             = f.fields_for :images do |i|
               = i.file_field :picture
 
