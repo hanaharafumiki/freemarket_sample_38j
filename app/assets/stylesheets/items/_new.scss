@@ -38,7 +38,7 @@
   }
 
   &__image {
-    height: 300px;
+    height: 350px;
     width: 100%;
     border-bottom: 0.2px solid lightgrey;
 
@@ -66,19 +66,21 @@
       margin-left: 30px;
       margin-top: 5px;
     }
-    &__up {
-      height: 200px;
+    &__upload {
+      height: 220px;
       width: 86%;
-      margin-top: 10px;
-      margin-left: 30px;
+      margin: 10px 0px 0px 30px;
+      padding-bottom: 15px;
       background-color: rgb(246, 246, 250);
       border:  dashed 1px rgb(182, 182, 182);
-
-      &__text {
-        text-align: center;
-        margin-top: 55px;
-      }
+      text-align: center;
     }
+    .cameraBtn{
+      font-size: 80px;
+      color: gray;
+      margin: 0 auto;
+    }
+
 
   }
   &__form {
@@ -115,7 +117,6 @@
         border: 1px solid lightgrey;
         border-radius: 3px;
         font-size: 15px;
-        
     }
     
     &__description {

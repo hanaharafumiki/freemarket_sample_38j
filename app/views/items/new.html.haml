@@ -16,29 +16,49 @@
           必須
       .items__Contents__image__capture
         最大10枚までアップロードできます
-      .items__Contents__image__up
-        .items__Contents__image__up__text
-          = form_for @item do |f|
-            = f.fields_for :images do |i|
-              = i.label :image do
-                = icon('fa', 'camera')  
-              = i.file_field :picture
-              = i.file_field :picture
-              = i.file_field :picture
-              = i.file_field :picture
-              = i.file_field :picture
-              = i.file_field :picture
-              = i.file_field :picture
-              = i.file_field :picture
-              = i.file_field :picture
-              = i.file_field :picture
-            = f.submit
+      .items__Contents__image__upload
+        = form_for @item do |f|
+          = f.fields_for :images do |i|
+            = i.label :picture, for: "item_images_attributes_0_picture", class: "cameraBtn" do
+              = icon('fa', 'camera')
+            = i.file_field :picture, id: "item_images_attributes_0_picture", style: "display: none;", name: "item[images_attributes][0][picture]"
 
-          .items__Contents__image__up__text--one
-          .items__Contents__image__up__text--two
-            ドラッグアンドドロップ 
-          .items__Contents__image__up__text--three
-            またはクリックしてファイルをアップロード 
+            = i.label :picture, for: "item_images_attributes_1_picture", class: "cameraBtn" do
+              = icon('fa', 'camera')
+            = i.file_field :picture, id: "item_images_attributes_1_picture", style: "display: none;", name: "item[images_attributes][1][picture]"
+
+            = i.label :picture, for: "item_images_attributes_2_picture", class: "cameraBtn" do
+              = icon('fa', 'camera')
+            = i.file_field :picture, id: "item_images_attributes_2_picture", style: "display: none;", name: "item[images_attributes][2][picture]"
+
+            = i.label :picture, for: "item_images_attributes_3_picture", class: "cameraBtn" do
+              = icon('fa', 'camera')
+            = i.file_field :picture, id: "item_images_attributes_3_picture", style: "display: none;", name: "item[images_attributes][3][picture]"
+
+            = i.label :picture, for: "item_images_attributes_4_picture", class: "cameraBtn" do
+              = icon('fa', 'camera')
+            = i.file_field :picture, id: "item_images_attributes_4_picture", style: "display: none;", name: "item[images_attributes][4][picture]"
+
+            = i.label :picture, for: "item_images_attributes_5_picture", class: "cameraBtn" do
+              = icon('fa', 'camera')
+            = i.file_field :picture, id: "item_images_attributes_5_picture", style: "display: none;", name: "item[images_attributes][5][picture]"
+
+            = i.label :picture, for: "item_images_attributes_6_picture", class: "cameraBtn" do
+              = icon('fa', 'camera')
+            = i.file_field :picture, id: "item_images_attributes_6_picture", style: "display: none;", name: "item[images_attributes][6][picture]"
+
+            = i.label :picture, for: "item_images_attributes_7_picture", class: "cameraBtn" do
+              = icon('fa', 'camera')
+            = i.file_field :picture, id: "item_images_attributes_7_picture", style: "display: none;", name: "item[images_attributes][7][picture]"
+
+            = i.label :picture, for: "item_images_attributes_8_picture", class: "cameraBtn" do
+              = icon('fa', 'camera')
+            = i.file_field :picture, id: "item_images_attributes_8_picture", style: "display: none;", name: "item[images_attributes][8][picture]"
+
+            = i.label :picture, for: "item_images_attributes_9_picture", class: "cameraBtn" do
+              = icon('fa', 'camera')
+            = i.file_field :picture, id: "item_images_attributes_9_picture", style: "display: none;", name: "item[images_attributes][9][picture]"
+          = f.submit
 
     .items__Contents__form
       .items__Contents__form__name
