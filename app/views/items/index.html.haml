@@ -99,48 +99,49 @@
           = link_to root_path do
             %h3.Title 新規投稿商品
         .ProductLists
-          .ProductList
-            %a
-            = link_to  "/products/3" do
-              %figure.ProductList--img
-                = image_tag("https://s3-ap-northeast-1.amazonaws.com/mercarimaster/uploads/captured_image/content/13/a007.png")
-              .ProductList--body
-                %h3.Name product3
-                .Details
-                  %ul
-                    %li 30000円
-                    %li
-                      %i.fa.fa-star.likeIcon
-                      0
-                  %p (税込)
-          .ProductList
-            %a
-            = link_to "/products/2" do
-              %figure.ProductList--img
-                = image_tag("https://s3-ap-northeast-1.amazonaws.com/mercarimaster/uploads/captured_image/content/10/a004.png")
-              .ProductList--body
-                %h3.Name product2
-                .Details
-                  %ul
-                    %li 20000円
-                    %li
-                      %i.fa.fa-star.likeIcon
-                      0
-                  %p (税込)
-          .ProductList
-            %a
-            = link_to "/products/1" do
-              %figure.ProductList--img
-                = image_tag("https://s3-ap-northeast-1.amazonaws.com/mercarimaster/uploads/captured_image/content/7/a001.png")
-              .ProductList--body
-                %h3.name product1
-                .Details
-                  %ul
-                    %li 10000円
-                    %li
-                      %i.fa.fa-star.likeIcon
-                      0
-                  %p (税込)
+          = render 'index', cates: @cates, piccs: @piccs
+          -# .ProductList
+          -#   %a
+          -#   = link_to  "/products/3" do
+          -#     %figure.ProductList--img
+          -#       = image_tag("https://s3-ap-northeast-1.amazonaws.com/mercarimaster/uploads/captured_image/content/13/a007.png")
+          -#     .ProductList--body
+          -#       %h3.Name product3
+          -#       .Details
+          -#         %ul
+          -#           %li 30000円
+          -#           %li
+          -#             %i.fa.fa-star.likeIcon
+          -#             0
+          -#         %p (税込)
+          -# .ProductList
+          -#   %a
+          -#   = link_to "/products/2" do
+          -#     %figure.ProductList--img
+          -#       = image_tag("https://s3-ap-northeast-1.amazonaws.com/mercarimaster/uploads/captured_image/content/10/a004.png")
+          -#     .ProductList--body
+          -#       %h3.Name product2
+          -#       .Details
+          -#         %ul
+          -#           %li 20000円
+          -#           %li
+          -#             %i.fa.fa-star.likeIcon
+          -#             0
+          -#         %p (税込)
+          -# .ProductList
+          -#   %a
+          -#   = link_to "/products/1" do
+          -#     %figure.ProductList--img
+          -#       = image_tag("https://s3-ap-northeast-1.amazonaws.com/mercarimaster/uploads/captured_image/content/7/a001.png")
+          -#     .ProductList--body
+          -#       %h3.name product1
+          -#       .Details
+          -#         %ul
+          -#           %li 10000円
+          -#           %li
+          -#             %i.fa.fa-star.likeIcon
+          -#             0
+          -#         %p (税込)
 
     %section.MainPicupBrand
       %h2.Head ピックアップブランド
