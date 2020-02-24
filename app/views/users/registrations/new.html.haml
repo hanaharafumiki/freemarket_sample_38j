@@ -1,9 +1,11 @@
 .Box
   .Header
     ここはヘッダーです
-  .Main
-    .UserInputTitle
-      会員情報入力
+    .Main
+      .UserInputTitle
+        会員情報入力
+      .UserInputError
+        = render "devise/shared/error_messages", resource: resource
     %form.Input
       .Input__nickname
         .Input__nickname__text.SideType
