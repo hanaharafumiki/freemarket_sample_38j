@@ -283,6 +283,7 @@
               overflow: hidden;
               margin: 0;
               z-index: auto;
+              text-align: center;
               Img{
                 position: absolute;
                 top: 0;
@@ -293,6 +294,16 @@
                 z-index: auto;
                 height: 150px;
                 object-fit: cover;
+              }
+              .SoldBox{
+                position: absolute;
+                bottom: 0;
+                color: white;
+                background: #ff6f6f;
+                border: solid 1px #d26f6f;
+                box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+                width: 100%;
+                font-size: 30px
               }
             }
             .ProductList--body{

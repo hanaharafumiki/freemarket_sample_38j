@@ -4,6 +4,10 @@
     = link_to item_path(@cates) do
       %figure.ProductList--img
         = image_tag("#{picc.picture}")
+        - if cate.sale == 1
+          .SoldBox
+            sold out
+
       .ProductList--body
         %h3.Name #{cate.name}
         .Details
