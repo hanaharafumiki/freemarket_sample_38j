@@ -79,7 +79,8 @@
       .GoodDetealContents__edit--or
         or
       .GoodDetealContents__edit--deleteButtan
-        この商品を削除する
+        = link_to("この商品を削除する", item_path, method: :delete, class: "GoodDetealContents__edit--deleteButtan__delete")
+
 
   .GoodDetealContents__comments
     %textarea{class: 'GoodDetealContents__comments--commentform'}
