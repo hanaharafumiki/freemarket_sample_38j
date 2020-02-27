@@ -24,7 +24,7 @@ class PurchasesController < ApplicationController
     :currency => 'jpy',
   )
   @item.update(sale: 1)
-  redirect_to action: 'done'
+  redirect_to items_path(current_user.id)
   end
 
   private

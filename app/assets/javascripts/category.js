@@ -32,7 +32,7 @@ $(document).on('turbolinks:load', function() {
   };
 
   // Lカテゴリーが選択された時のアクション
-  $("#parent-form").on('change', function() {
+  $("#parent_form").on('change', function() {
     l_cat = $(this).val()
     $("#m_category, #s_category").remove()
 
