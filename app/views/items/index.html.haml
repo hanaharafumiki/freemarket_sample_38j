@@ -89,25 +89,25 @@
           .ListDetail
             お支払いは、クレジットカードだけでなく、ポイントや売上金など多彩な方法があります。
 
-    -# %section.MainPicupCategory
-    -#   %h2.Head ピックアップカテゴリー
-    -#   .ProductBox
-    -#     .ProductHead
-    -#       %a
-    -#       = link_to root_path do
-    -#         %h3.Title 新規投稿商品
-    -#     .ProductLists
-    -#       = render 'category', cates: @cates, piccs: @piccs
+    %section.MainPicupCategory
+      %h2.Head ピックアップカテゴリー
+      .ProductBox
+        .ProductHead
+          %a
+          = link_to root_path do
+            %h3.Title 新規投稿商品
+        .ProductLists
+          = render 'category', cates: @cates, piccs: @piccs
 
-    -# %section.MainPicupBrand
-    -#   %h2.Head ピックアップブランド
-    -#   .ProductBox
-    -#     .ProductHead
-    -#       %a
-    -#       = link_to root_path do
-    -#         %h3.Title アーカイバ
-    -#     .ProductLists
-    -#       = render 'brand', bras: @bras, picbs: @picbs
+    %section.MainPicupBrand
+      %h2.Head ピックアップブランド
+      .ProductBox
+        .ProductHead
+          %a
+          = link_to root_path do
+            %h3.Title アーカイバ
+        .ProductLists
+          = render 'brand', bras: @bras, picbs: @picbs
 
   .PurchaseBtn
     = link_to new_item_path, class: :"PurchaseBtn" do
