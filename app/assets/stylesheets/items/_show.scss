@@ -201,3 +201,17 @@ a{
   color: #3CCACE;
 }
 
+
+.notification {
+  color: white;
+  text-align: center;  
+
+  .notice {
+    background-color: deeppink;
+  }
+
+  .alert {
+    background-color: deepskyblue;
+    font-size: xx-large;
+  }
+}
