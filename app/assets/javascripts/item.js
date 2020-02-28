@@ -21,7 +21,6 @@ function input_check(){
   $('#price_calc').removeClass("inp_error");
 
 
-
   // 入力エラー文をリセット
   $("#Input_error__image").empty();
   $("#Input_error__itemname").empty();
