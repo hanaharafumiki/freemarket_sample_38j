@@ -9,150 +9,157 @@
 }
 
 .purchases__Main{
-  background-color: #f5f5f5;
-  width: 100%;
-  height: 1200px;
+  background-color: #ffffff;
+  width: 700px;
+  // height: 1200px;
+  margin: 0 auto;
   box-sizing: border-box;
-  padding: 32px 16px 48px;
+  // padding: 32px 16px 48px;
   font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
     &__header{
       width: 700px;
       height: 75px;
       background-color: #fff;
-      padding:16px;
+      // padding:16px;
       font-family: 'Source Sans Pro', Helvetica , Arial, 'æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“', 'YuGothic', 'ãƒ¡ã‚¤ãƒªã‚ª', 'Meiryo', sans-serif;
       font-size: 18px;
       font-weight: bold;
       text-align: center;
       color: #333333;
       border-bottom: 1px solid #f5f5f5;
-      margin: 0 auto;
+      // margin: 0 auto;
       
     }
     &__content{
       display: flex;
-      width: 700px;
-      height: 420px;
+      // justify-content: space-between;
+      width: 100%;
       background-color: #fff;
-      padding: 24px 16px;
       border-bottom: 1px solid #f5f5f5; 
-      margin: 0 auto;
+      // margin: 0 auto;
+      padding: 20px 0;
         &__date{
-          width: 52%;
-          height: 100%;
+          width: 400px;
           background-color: #fff;
           display: flex;
-          margin:0 auto;
+          margin: 0 auto;
           .item{
-            width: 130px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             background-color: #fff;
             background-image: image-url('record/image001.i.jpg');
-            margin-left: 90px;
           }
           .value{
             width: 100%;
-            height: 100%;
+            // height: 100%;
             background-color: #fff;
             margin-left: 15px;
             .itemName{
-              width: 50%;
-              height: 25px;
+              // width: 50%;
+              // height: 25px;
               background-color:#fff;
-              margin-top: 15px;
+              // margin-top: 15px;
             }
             .itemDate{
-              width: 100%;
-              height: 100px;
+              // width: 100%;
+              // height: 100px;
               background-color: #fff;
               display: flex;
-              position: relative;
+              padding-top: 10px;
+              // position: relative;
               .itemValue{
                 width: 80px;
                 height: 40px;
                 font-size: 16px;
                 background-color: #fff;
-                position: absolute;
+                // position: absolute;
                 bottom: 0;
               
               }
               .itemTax{
-                width: calc(100% - 100px);
+                // width: calc(100% - 100px);
                 height: 40px;
                 font-size: 15px;
                 background-color:#fff;
-                position: absolute;
-                bottom: 0;
-                right: 0;
+                // position: absolute;
+                // bottom: 0;
+                // right: 0;
               }
             }
           }
       }
     }
     &__buy{
-      width: 700px;
-      height: 650px;
+      width: 400px;
+      // height: 650px;
       background-color: #fff;
-      padding: 24px 16px;
+      // padding: 24px;
       border-bottom: 1px solid #f5f5f5;
       margin: 0 auto;
       display: flex;
         &__content{
           width: 400px;
-          height: 500px;
+          // height: 500px;
           background-color: #fff;
-          margin: 0 auto;
+          
+          // margin: 0 auto;
           &__value{
             width: 100%;
             height: 50px;
+            line-height: 50px;
             background-color: #fff;
             display: flex;
             justify-content: space-between;
             font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
             font-weight: bold;
+            // padding: 30px 0 20px 0;
             .left{
-              width: 100px;
-              height: 25px;
+
+              width: 50%;
+              // height: 25px;
+              // line-height: 25px;
               background-color: #fff;
               font-size: 18px;
 
             }
             .right{
-              width: 150px;
-              height: 50px;
-              background-color: #fff;
-              font-size: 24px;
+              width: 50%;
+              // height: 50px;
               text-align: right;
+              background-color: #fff;
+              font-size: 30px;
+              // text-align: right;
             }
           }
 
           &__point{
             width: 400px;
-            height: 30px;
+            height: 50px;
+            line-height: 50px;
             background-color:#fff;
-            position: relative;
-            margin-top: 24px;
-            left: 0;
+            // position: relative;
+            // margin-top: 24px;
+            // left: 0;
             color: #333;
             border-bottom: 1px solid #f5f5f5;
           }
           &__method{
             width: 400px;
-            height: 25px;
+            height: 70px;
             background-color: #fff;
-            padding: 24px 0;
+            // padding: 24px 0;
             font-size: 14px;
-            border-bottom: 1px solid #f5f5f5;
+            // border-bottom: 1px solid #f5f5f5;
             .method{
-              height: 30px;
+              // height: 30px;
               background-color: #fff;
               font-weight: bold;
             }
             .logIn{
-                height: 30px;
+                // height: 30px;
                 background-color: #fff;
                 color: #0099E7;
-                border-bottom: 1px solid #f5f5f5;
+                // border-bottom: 1px solid #f5f5f5;
                 text-decoration: none;
                 :hover {
                   color:rgb(109, 188, 228);
@@ -160,18 +167,18 @@
             }
           }
           &__address{
-            width: 100%;
-            height: 25px;
+            // width: 100%;
+            height: 70px;
             background-color: #fff;
-            padding: 24px 0;
+            // padding: 24px 0;
             font-size: 14px;
             .address{
-              height: 30px;
+              // height: 30px;
               background-color: #fff;
               font-weight: bold;
             }
             .logIn{
-              height: 30px;
+              // height: 30px;
               background-color: #fff;
               color: #0099E7;
               text-decoration: none;
@@ -184,14 +191,14 @@
             width: 100%;
             height: 280px;
             background-color:#fff;
-            padding: 24 0;
+            // padding: 24 0;
               .note{
-                width: 90%;
-                height: 35px;
+                // width: 90%;
+                height: 70px;
                 font-size: 14px;
                 color: red;
                 background-color: white;
-                padding: 24px 0 ;
+                // padding: 24px 0 ;
               }
               .buyBtn{
                 width: 350px;
